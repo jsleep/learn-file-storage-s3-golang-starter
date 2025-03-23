@@ -108,7 +108,7 @@ func (cfg *apiConfig) handlerUploadVideo(w http.ResponseWriter, r *http.Request)
 	}
 
 	if video.UserID != userID {
-		respondWithError(w, http.StatusForbidden, "You don't have permission to upload this thumbnail", nil)
+		respondWithError(w, http.StatusForbidden, "You don't have permission to upload this video", nil)
 		return
 	}
 
